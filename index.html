@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpigal - Euronics Marín</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Euronics_logo.svg/2560px-Euronics_logo.svg.png" alt="Logo Euronics" class="logo">
+        <h1>Carpigal - Euronics Marín</h1>
+        <p>Méndez Núñez, 67 Bajo - 36900 Marín (Pontevedra)</p>
+        <p>Tel: 986 892 058 / 605 263 377</p>
+        <p>Horario: Lunes a Viernes 10:00-13:30 | 16:30-20:00</p>
+        <input type="text" id="search" placeholder="Buscar producto..." onkeyup="buscarProducto()">
+        <div id="cart">🛒 Carrito: <span id="cart-count">0</span> productos | Total: <span id="cart-total">0 €</span></div>
+        <button id="checkout-btn" onclick="finalizarCompra()">Finalizar compra</button>
+    </header>
+    <main>
+        <h2>Productos destacados</h2>
+        <div class="products" id="products">
+            <div class="product" data-name="Lavadora LG TurboWash">
+                <img src="https://via.placeholder.com/150" alt="Lavadora LG">
+                <h3>Lavadora LG TurboWash</h3>
+                <p>Precio: 399 €</p>
+                <button onclick="addToCart('Lavadora LG TurboWash', 399)">Añadir al carrito</button>
+            </div>
+            <div class="product" data-name="Frigorífico Samsung No Frost">
+                <img src="https://via.placeholder.com/150" alt="Frigorífico Samsung">
+                <h3>Frigorífico Samsung No Frost</h3>
+                <p>Precio: 599 €</p>
+                <button onclick="addToCart('Frigorífico Samsung No Frost', 599)">Añadir al carrito</button>
+            </div>
+            <div class="product" data-name="Microondas Balay QuickHeat">
+                <img src="https://via.placeholder.com/150" alt="Microondas Balay">
+                <h3>Microondas Balay QuickHeat</h3>
+                <p>Precio: 89 €</p>
+                <button onclick="addToCart('Microondas Balay QuickHeat', 89)">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2025 Carpigal - Euronics Marín</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
